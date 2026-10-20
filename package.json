@@ -1,0 +1,39 @@
+{
+	"name": "cmd-mod-session-stats",
+	"version": "0.1.0",
+	"description": "Session stats for Command Code (cmdc): turns, steps, settled tok/s, TTFT, cache hit and context, modelled on the DeepSeek Harness stats strip.",
+	"type": "module",
+	"license": "MIT",
+	"keywords": [
+		"cmd-mod",
+		"cmd-mod-hook",
+		"cmd-mod-command",
+		"command-code",
+		"cmdc",
+		"tps",
+		"tokens-per-second",
+		"cache-hit",
+		"stats"
+	],
+	"files": [
+		"src",
+		"README.md",
+		"LICENSE"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sneycampos/cmd-mod-session-stats.git"
+	},
+	"author": "sneycampos",
+	"engines": {
+		"node": ">=22"
+	},
+	"commandcode": {
+		"mods": [
+			"./src/index.ts"
+		]
+	},
+	"scripts": {
+		"test": "node --experimental-strip-types test/load.test.mjs"
+	}
+}
